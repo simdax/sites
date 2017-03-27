@@ -46,6 +46,8 @@ var draw = function(e) {
     };
     drawer[e.type](coors);
 };
+
+
 canvas.addEventListener('mousedown', draw, false);
 canvas.addEventListener('mousemove', draw, false);
 canvas.addEventListener('mouseup', draw, false);
