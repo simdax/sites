@@ -1,15 +1,11 @@
-// No Library
-// Also, I developed a Google Chrome App 
-// http://goo.gl/1450r
-
-"use strict";
+    "use strict";
 
 
 function $(el) {return document.getElementById(el.replace(/#/,''));};
 var canvas = $('#canvas');
 canvas.width = document.body.clientWidth;
 canvas.height = document.body.clientHeight;
-var context = canvas.getContext('2d');
+var context = canvas.getContext('2d')
 var start = function(coors) {
     context.beginPath();
     context.moveTo(coors.x, coors.y);
@@ -55,3 +51,5 @@ canvas.addEventListener('touchstart', draw, false);
 canvas.addEventListener('touchmove', draw, false);
 canvas.addEventListener('touchend', draw, false);
 
+
+    
